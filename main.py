@@ -27,6 +27,8 @@ def process_single_job(self,user_id,job_id,priority):
         return f"Succesfully submitted job {job_id} for use {user_id}."
     else:
         return f"Failed to submit job {job_id} for user {user_id} (Queue full)."
+    
+    
 
 def handle_simultaneous_submissions(self,jobs):
     all_submissions_outcomes = []
